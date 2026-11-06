@@ -3,22 +3,22 @@ var slideshows = document.querySelectorAll('[data-component="slideshow"]');
 slideshows.forEach(initSlideShow);
 
 function initSlideShow(slideshow) {
-
-  var slides = document.querySelectorAll(`#${slideshow.id} [role="list"] .slide`);
+  var slides = slideshow.querySelectorAll('[role="list"] .slide');
   var progressBar = slideshow.querySelector('.slideshow-progress-bar');
 
-  var index = 0, time = 9000;
+  if (slides.length === 0) return;
+
+  var index = 0;
+  var time = 9000;
+
   slides[index].classList.add('active');
   playProgress();
 
-  setInterval( () => {
+  setInterval(() => {
     slides[index].classList.remove('active');
-    index++;
-    if (index === slides.length) index = 0;
-
+    index = (index + 1) % slides.length;
     slides[index].classList.add('active');
     playProgress();
-
   }, time);
 
   function playProgress() {

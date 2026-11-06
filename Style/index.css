@@ -254,11 +254,7 @@ a {
 }
 
 .slideshow-progress {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 2;
+    position: relative;
     height: 4px;
     background-color: rgba(255, 255, 255, 0.2);
 }
@@ -267,6 +263,95 @@ a {
     display: block;
     height: 100%;
     width: 0%;
+    background: var(--gradient);
+}
+
+.slideshow-controls {
+    width: fit-content;
+    margin: 16px auto 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 8px;
+    border-radius: 999px;
+    background-color: rgba(10, 12, 18, 0.7);
+    border: 1px solid var(--border);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.slideshow-btn {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: transparent;
+    color: var(--text);
+    font-size: 1.6rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.slideshow-btn:hover,
+.slideshow-btn:focus-visible {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+.icon-pause,
+.icon-play {
+    display: block;
+}
+
+.icon-pause {
+    width: 12px;
+    height: 14px;
+    border-left: 4px solid var(--text);
+    border-right: 4px solid var(--text);
+}
+
+.icon-play {
+    display: none;
+    width: 0;
+    height: 0;
+    margin-left: 3px;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 13px solid var(--text);
+}
+
+.slideshow-btn[aria-pressed="true"] .icon-pause {
+    display: none;
+}
+
+.slideshow-btn[aria-pressed="true"] .icon-play {
+    display: block;
+}
+
+.slideshow-dots {
+    display: flex;
+    gap: 8px;
+    padding: 0 4px;
+}
+
+.slideshow-dot {
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.35);
+    cursor: pointer;
+    transition: background-color 0.2s ease, width 0.2s ease;
+}
+
+.slideshow-dot[aria-current="true"] {
+    width: 26px;
+    border-radius: 6px;
     background: var(--gradient);
 }
 
@@ -576,6 +661,12 @@ main > section {
 .strength p {
     color: var(--muted);
     margin: 0;
+}
+
+.strength-ai {
+    grid-column: 1 / -1;
+    border-left-color: #a855f7;
+    background: linear-gradient(135deg, rgba(168, 85, 247, 0.12), rgba(34, 211, 238, 0.06)), var(--surface);
 }
 
 #contact {

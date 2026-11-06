@@ -14,7 +14,7 @@
             <nav id="nav" aria-label="Hauptnavigation">
                 <a href="#about" data-de="Über mich" data-en="About me">Über mich</a>
                 <a href="#projects" data-de="Projekte" data-en="Projects">Projekte</a>
-                <a href="#strengths" data-de="Was ich mitbringe" data-en="What I bring">Was ich mitbringe</a>
+                <a href="#strengths" data-de="Was ich mitbringe" data-en="What I stand for">Was ich mitbringe</a>
                 <a href="#contact" data-de="Kontakt" data-en="Contact">Kontakt</a>
             </nav>
 
@@ -36,19 +36,39 @@
             </div>
         </section>
 
-        <div id="slideshow-example" data-component="slideshow">
+        <div id="slideshow-example" data-component="slideshow" aria-roledescription="carousel" aria-label="Banner">
             <div role="list">
-                <div class="slide">
-                    <img src="Images/Slideshow1.png" alt="Slide1">
+                <div class="slide" role="listitem">
+                    <img src="Images/Slideshow1.png"
+                         data-src-de="Images/Slideshow1.png" data-src-en="Images/Slideshow1_en.png"
+                         data-alt-de="Banner: Programmieren ist mehr als nur ein Job, mit C#-Code und Technologie-Icons"
+                         data-alt-en="Banner: Programming is more than just a job, with C# code and technology icons"
+                         alt="Banner: Programmieren ist mehr als nur ein Job, mit C#-Code und Technologie-Icons">
                 </div>
-                <div class="slide">
-                    <img src="Images/Slideshow2.png" alt="Banner: Neugierig auf neue Technologien, mit meinem Lernweg von HTML bis Azure">
+                <div class="slide" role="listitem">
+                    <img src="Images/Slideshow2.png"
+                         data-src-de="Images/Slideshow2.png" data-src-en="Images/Slideshow2_en.png"
+                         data-alt-de="Banner: Neugierig auf neue Technologien, mit meinem Lernweg von HTML bis Azure"
+                         data-alt-en="Banner: Curious about new technologies, with my learning path from HTML to Azure"
+                         alt="Banner: Neugierig auf neue Technologien, mit meinem Lernweg von HTML bis Azure">
                 </div>
-                <div class="slide">
-                    <img src="Images/Slideshow3.png" alt="Banner: Großes Herz für Kunden, mit den Schritten Zuhören, Verstehen, Umsetzen, Begeistern">
+                <div class="slide" role="listitem">
+                    <img src="Images/Slideshow3.png"
+                         data-src-de="Images/Slideshow3.png" data-src-en="Images/Slideshow3_en.png"
+                         data-alt-de="Banner: Großes Herz für Kunden, mit den Schritten Zuhören, Verstehen, Umsetzen, Begeistern"
+                         data-alt-en="Banner: A big heart for customers, with the steps Listen, Understand, Build, Delight"
+                         alt="Banner: Großes Herz für Kunden, mit den Schritten Zuhören, Verstehen, Umsetzen, Begeistern">
                 </div>
             </div>
             <div class="slideshow-progress"><span class="slideshow-progress-bar"></span></div>
+            <div class="slideshow-controls">
+                <button type="button" class="slideshow-btn" data-action="prev" aria-label="Vorheriges Banner">&#8249;</button>
+                <div class="slideshow-dots"></div>
+                <button type="button" class="slideshow-btn" data-action="pause" aria-label="Pausieren" aria-pressed="false">
+                    <span class="icon-pause"></span><span class="icon-play"></span>
+                </button>
+                <button type="button" class="slideshow-btn" data-action="next" aria-label="Nächstes Banner">&#8250;</button>
+            </div>
         </div>
 
         <section class="skills" aria-label="Skills">
@@ -65,6 +85,7 @@
                 <li>Git</li>
                 <li>HTML</li>
                 <li>CSS</li>
+                <li data-de="KI-Tools (Claude, ChatGPT)" data-en="AI tools (Claude, ChatGPT)">KI-Tools (Claude, ChatGPT)</li>
             </ul>
         </section>
 
@@ -73,7 +94,8 @@
                 <h2 data-de="Über mich" data-en="About me">Über mich</h2>
                 <div>
                     <p data-de="Ich bin Angelika, frisch ausgelernte Fachinformatikerin für Anwendungsentwicklung. In meiner Ausbildung bei der QUIBIQ GmbH in Stuttgart habe ich Anwendungen mit C# und .NET entwickelt und vor allem Systeme miteinander verbunden: EDI-Datenaustausch mit Microsoft BizTalk, Datenmigration, SQL und die Integration von Azure AI Services." data-en="I'm Angelika, a newly qualified application developer. During my apprenticeship at QUIBIQ GmbH in Stuttgart, I built applications with C# and .NET and focused on connecting systems: EDI data exchange with Microsoft BizTalk, data migration, SQL and integrating Azure AI Services.">Ich bin Angelika, frisch ausgelernte Fachinformatikerin für Anwendungsentwicklung. In meiner Ausbildung bei der QUIBIQ GmbH in Stuttgart habe ich Anwendungen mit C# und .NET entwickelt und vor allem Systeme miteinander verbunden: EDI-Datenaustausch mit Microsoft BizTalk, Datenmigration, SQL und die Integration von Azure AI Services.</p>
-                    <p data-de="Mich hat schon als Kind fasziniert, wie aus einer Idee etwas entsteht, das man tatsächlich benutzen kann. Daran hat sich bis heute nichts geändert. Auch in meiner Freizeit baue ich gerne Dinge, am liebsten an der Schnittstelle zwischen Software und Elektronik." data-en="Even as a child, I was fascinated by how an idea turns into something people can actually use. That hasn't changed. In my free time I also love building things, ideally where software meets electronics.">Mich hat schon als Kind fasziniert, wie aus einer Idee etwas entsteht, das man tatsächlich benutzen kann. Daran hat sich bis heute nichts geändert. Auch in meiner Freizeit baue ich gerne Dinge, am liebsten an der Schnittstelle zwischen Software und Elektronik.</p>
+                    <p data-de="Neben der Entwicklung war ich auch im Kundensupport tätig. Dort habe ich gelernt, mit Kunden auf Augenhöhe zu kommunizieren, technische Probleme verständlich zu erklären und gemeinsam Lösungen zu finden." data-en="Alongside development, I also worked in customer support. There I learned to communicate with customers as equals, explain technical problems clearly and find solutions together.">Neben der Entwicklung war ich auch im Kundensupport tätig. Dort habe ich gelernt, mit Kunden auf Augenhöhe zu kommunizieren, technische Probleme verständlich zu erklären und gemeinsam Lösungen zu finden.</p>
+                    <p data-de="Auch in meiner Freizeit programmiere ich gerne eigene Projekte. Besonders spannend finde ich es, wenn Software auf echte Hardware trifft. Zuletzt habe ich die Software für ein fertiges Mikrocontroller-Display geschrieben, das GIF-Animationen und Live-Wetterdaten anzeigt. In die Elektronik selbst möchte ich mich Schritt für Schritt einarbeiten, als Nächstes mit einem kleinen Roboter-Bausatz." data-en="In my free time, I enjoy programming my own projects, especially when software meets real hardware. Most recently, I wrote the software for a ready-made microcontroller display that shows GIF animations and live weather data. I'd like to get into the electronics side step by step, starting next with a small robot kit.">Auch in meiner Freizeit programmiere ich gerne eigene Projekte. Besonders spannend finde ich es, wenn Software auf echte Hardware trifft. Zuletzt habe ich die Software für ein fertiges Mikrocontroller-Display geschrieben, das GIF-Animationen und Live-Wetterdaten anzeigt. In die Elektronik selbst möchte ich mich Schritt für Schritt einarbeiten, als Nächstes mit einem kleinen Roboter-Bausatz.</p>
                 </div>
             </section>
 
@@ -93,9 +115,9 @@
                         </div>
                         <div class="project-body">
                             <p class="project-type" data-de="Privates Projekt" data-en="Personal project">Privates Projekt</p>
-                            <h3 data-de="Smart-Display mit Mikrocontroller" data-en="Smart display with a microcontroller">Smart-Display mit Mikrocontroller</h3>
-                            <p data-de="Ein kleines Display für den Schreibtisch, das je nach Stimmung verschiedene GIF-Animationen zeigt und aktuelle Wetterdaten über eine Web-API abruft. Die größte Herausforderung: Die GIFs liefen anfangs nur mit 1 bis 5 FPS. Mit Speicher-Logs habe ich den knappen Heap Schritt für Schritt optimiert, bis die Animationen flüssig liefen." data-en="A small desk display that shows different GIF animations depending on your mood and fetches live weather data from a web API. The biggest challenge: the GIFs initially ran at only 1 to 5 FPS. Using memory logs, I optimised the limited heap step by step until the animations ran smoothly.">Ein kleines Display für den Schreibtisch, das je nach Stimmung verschiedene GIF-Animationen zeigt und aktuelle Wetterdaten über eine Web-API abruft. Die größte Herausforderung: Die GIFs liefen anfangs nur mit 1 bis 5 FPS. Mit Speicher-Logs habe ich den knappen Heap Schritt für Schritt optimiert, bis die Animationen flüssig liefen.</p>
-                            <ul class="tags"><li>Arduino</li><li>C++</li><li>REST-API</li><li>JSON</li></ul>
+                            <h3 data-de="Software für ein Smart-Display" data-en="Software for a smart display">Software für ein Smart-Display</h3>
+                            <p data-de="Für ein fertiges Display-Modul mit Mikrocontroller habe ich die Software entwickelt: Je nach Stimmung zeigt es verschiedene GIF-Animationen und ruft außerdem aktuelle Wetterdaten über eine Web-API ab. Die größte Herausforderung: Die GIFs liefen anfangs nur mit 1 bis 5 FPS. Mit Speicher-Logs habe ich den knappen Heap Schritt für Schritt optimiert, bis die Animationen flüssig liefen. Entwickelt habe ich es mit Claude als KI-Pair-Programmer, Planung, Fehlersuche und Entscheidungen lagen dabei bei mir." data-en="I developed the software for a ready-made display module with a microcontroller: it shows different GIF animations depending on your mood and fetches live weather data from a web API. The biggest challenge: the GIFs initially ran at only 1 to 5 FPS. Using memory logs, I optimised the limited heap step by step until the animations ran smoothly. I built it with Claude as an AI pair programmer, while the planning, debugging and decisions were mine.">Für ein fertiges Display-Modul mit Mikrocontroller habe ich die Software entwickelt: Je nach Stimmung zeigt es verschiedene GIF-Animationen und ruft außerdem aktuelle Wetterdaten über eine Web-API ab. Die größte Herausforderung: Die GIFs liefen anfangs nur mit 1 bis 5 FPS. Mit Speicher-Logs habe ich den knappen Heap Schritt für Schritt optimiert, bis die Animationen flüssig liefen. Entwickelt habe ich es mit Claude als KI-Pair-Programmer, Planung, Fehlersuche und Entscheidungen lagen dabei bei mir.</p>
+                            <ul class="tags"><li>Arduino</li><li>C++</li><li>REST-API</li><li>JSON</li><li>Claude</li></ul>
                         </div>
                     </article>
 
@@ -103,15 +125,15 @@
                         <div class="project-visual visual-integration" aria-hidden="true">
                             <div class="node">ERP</div>
                             <div class="flow"><span></span><span></span><span></span></div>
-                            <div class="node node-hub">BizTalk</div>
+                            <div class="node node-hub">EDI</div>
                             <div class="flow"><span></span><span></span><span></span></div>
-                            <div class="node">EDI</div>
+                            <div class="node">SQL</div>
                         </div>
                         <div class="project-body">
                             <p class="project-type" data-de="Ausbildung bei QUIBIQ" data-en="Apprenticeship at QUIBIQ">Ausbildung bei QUIBIQ</p>
                             <h3 data-de="Systemintegration und Datenmigration" data-en="System integration and data migration">Systemintegration und Datenmigration</h3>
-                            <p data-de="In Kundenprojekten habe ich Schnittstellen zwischen unterschiedlichen Systemen umgesetzt, EDI-Nachrichten über Microsoft BizTalk ausgetauscht und Daten migriert. Dazu kamen SQL-Abfragen, Tests, Dokumentation und Support für Kunden bei technischen Fragen." data-en="In client projects, I implemented interfaces between different systems, exchanged EDI messages via Microsoft BizTalk and migrated data. This also included SQL queries, testing, documentation and supporting customers with technical questions.">In Kundenprojekten habe ich Schnittstellen zwischen unterschiedlichen Systemen umgesetzt, EDI-Nachrichten über Microsoft BizTalk ausgetauscht und Daten migriert. Dazu kamen SQL-Abfragen, Tests, Dokumentation und Support für Kunden bei technischen Fragen.</p>
-                            <ul class="tags"><li>C#</li><li>.NET</li><li>BizTalk</li><li>EDI</li><li>SQL</li><li>Azure DevOps</li></ul>
+                            <p data-de="In Kundenprojekten habe ich Lösungen für den Datenaustausch zwischen unterschiedlichen Systemen per EDI umgesetzt. Außerdem habe ich an einem Datenmigrationsprojekt mitgearbeitet und dort Kunden im Support bei technischen Fragen unterstützt. Dazu gehörten auch SQL-Abfragen, Tests und Dokumentation." data-en="In client projects, I built solutions for exchanging data between different systems via EDI. I also worked on a data migration project, where I supported customers with technical questions. This also included SQL queries, testing and documentation.">In Kundenprojekten habe ich Lösungen für den Datenaustausch zwischen unterschiedlichen Systemen per EDI umgesetzt. Außerdem habe ich an einem Datenmigrationsprojekt mitgearbeitet und dort Kunden im Support bei technischen Fragen unterstützt. Dazu gehörten auch SQL-Abfragen, Tests und Dokumentation.</p>
+                            <ul class="tags"><li>C#</li><li>.NET</li><li>EDI</li><li>SQL</li><li>Azure DevOps</li></ul>
                         </div>
                     </article>
 
@@ -138,8 +160,12 @@
             </section>
 
             <section class="strengths reveal" id="strengths">
-                <h2 data-de="Was ich mitbringe" data-en="What I bring">Was ich mitbringe</h2>
+                <h2 data-de="Was ich mitbringe" data-en="What I stand for">Was ich mitbringe</h2>
                 <div class="strength-grid">
+                    <div class="strength strength-ai">
+                        <h3 data-de="KI als Werkzeug" data-en="AI as a tool">KI als Werkzeug</h3>
+                        <p data-de="Ich nutze KI-Tools wie Claude und ChatGPT ganz selbstverständlich: zum Planen, Recherchieren, Debuggen und um mich schneller in neue Technologien einzuarbeiten. Die Verantwortung bleibt dabei bei mir. Ich prüfe Vorschläge kritisch und übernehme Code erst, wenn ich ihn verstanden habe. In meiner Ausbildung habe ich außerdem Azure AI Services in Kundenlösungen integriert." data-en="I use AI tools like Claude and ChatGPT as a natural part of my work: for planning, research, debugging and getting up to speed with new technologies faster. The responsibility stays with me. I review suggestions critically and only adopt code once I understand it. During my apprenticeship, I also integrated Azure AI Services into client solutions.">Ich nutze KI-Tools wie Claude und ChatGPT ganz selbstverständlich: zum Planen, Recherchieren, Debuggen und um mich schneller in neue Technologien einzuarbeiten. Die Verantwortung bleibt dabei bei mir. Ich prüfe Vorschläge kritisch und übernehme Code erst, wenn ich ihn verstanden habe. In meiner Ausbildung habe ich außerdem Azure AI Services in Kundenlösungen integriert.</p>
+                    </div>
                     <div class="strength">
                         <h3 data-de="Lernbereitschaft" data-en="Eagerness to learn">Lernbereitschaft</h3>
                         <p data-de="Wenn ich etwas noch nicht weiß, sehe ich das nicht als Grenze, sondern als Gelegenheit. Neue Technologien arbeite ich mir gerne selbst an." data-en="If I don't know something yet, I see it as an opportunity rather than a limit. I enjoy teaching myself new technologies.">Wenn ich etwas noch nicht weiß, sehe ich das nicht als Grenze, sondern als Gelegenheit. Neue Technologien arbeite ich mir gerne selbst an.</p>
@@ -161,8 +187,8 @@
         </main>
 
         <footer id="contact" class="reveal">
-            <h2 data-de="Lass uns sprechen" data-en="Let's talk">Lass uns sprechen</h2>
-            <p class="contact-intro" data-de="Ich suche eine Stelle als Junior Softwareentwicklerin in der Region Stuttgart und freue mich über jede Nachricht." data-en="I'm looking for a junior software developer position in the Stuttgart area and look forward to hearing from you.">Ich suche eine Stelle als Junior Softwareentwicklerin in der Region Stuttgart und freue mich über jede Nachricht.</p>
+            <h2 data-de="Neugierig geworden?" data-en="Curious?">Neugierig geworden?</h2>
+            <p class="contact-intro" data-de="Ich freue mich auf jede Nachricht! Aktuell suche ich eine Stelle als Junior Softwareentwicklerin in der Region Stuttgart." data-en="I'd love to hear from you! I'm currently looking for a junior software developer position in the Stuttgart area.">Ich freue mich auf jede Nachricht! Aktuell suche ich eine Stelle als Junior Softwareentwicklerin in der Region Stuttgart.</p>
             <ul class="contact-list">
                 <li><a class="btn btn-primary" href="mailto:angelikamillermiller@gmail.com">E-Mail</a></li>
                 <li><a class="btn btn-ghost" href="https://www.linkedin.com/in/angelika-miller-8bba73423/" target="_blank" rel="noopener">LinkedIn</a></li>
